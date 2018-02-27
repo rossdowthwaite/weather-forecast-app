@@ -51,7 +51,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 * [ Node.js ](https://nodejs.org/en/)
 * [ Angular 4 ](https://angular.io/)
 * [ OpenWeatherMap ](http://openweathermap.org/forecast5)
-* [ NgRx ](https://github.com/ngrx/store)/)
+* [ NgRx ](https://github.com/ngrx/store)
 * [ RxJs ](https://www.learnrxjs.io/)
 * [ karma ](https://karma-runner.github.io/2.0/index.html)
 * [ Protractor ](http://www.protractortest.org/#/)
