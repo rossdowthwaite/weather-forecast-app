@@ -1,0 +1,6 @@
+<div class="times-container">
+  <div class="times-gap">{{ date | unixToDate }}</div>
+  <div class="times-wrapper">
+    <div class="time" *ngFor="let time of ( times | async )">{{ time | unixToTime }}</div>
+  </div>
+</div>

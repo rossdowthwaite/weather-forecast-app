@@ -1,0 +1,18 @@
+.forecast-loading-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.forecast-loading-content {
+  position: absolute;
+  width:100%;
+  padding: 30px;
+}
+
+  .loading-text {
+    font-size: 16px;
+  }
+
+  .error-text {
+    font-size: 16px;
+  }

@@ -1,0 +1,9 @@
+.city-forecast-period__temp {
+  font-size: 20px;
+}
+
+.city-forecast-period__desc {
+  font-size: 14px;
+  margin-bottom: 26px;
+  margin-top: 26px;
+}

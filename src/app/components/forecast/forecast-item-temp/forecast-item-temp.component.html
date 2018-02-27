@@ -1,0 +1,9 @@
+<div class="city-forecast-period">
+  <p class="city-forecast-period__temp">{{ temp | celcius }}</p>
+
+  <div class="city-forecast-period__more" *ngIf="showMore">
+    <p class="city-forecast-period__temp-min">min: {{ temp_min | celcius }}</p>
+    <p class="city-forecast-period__temp-max">max: {{ temp_max | celcius  }}</p>
+    <p class="city-forecast-period__desc">{{ description }}</p>
+  </div>
+</div>

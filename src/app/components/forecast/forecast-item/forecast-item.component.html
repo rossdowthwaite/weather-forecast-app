@@ -1,0 +1,17 @@
+<div>
+  <div class="forecast-item">
+    <div class="forecast-item-title">
+        <h2 class="forecast-item-title-name">{{ name }}</h2>
+        <p>{{ country }}</p>
+        <p class="show-more" (click)="toggleShowHide()">{{ showMore ? 'Show less' : 'Show more' }}</p>
+    </div>
+    <div class="forecast-periods">
+      <p class="remove-forecast" (click)='removeForecast()'>X</p>
+      <app-forecast-item-temp *ngFor="let forecast of forecastData"
+        class="forecast-period"
+        [forecast]='forecast'
+        [showMore]='showMore'>
+      </app-forecast-item-temp>
+    </div>
+  </div>
+</div>

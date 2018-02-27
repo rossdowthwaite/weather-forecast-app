@@ -1,0 +1,11 @@
+.forecast-container {
+  width:90%;
+  margin: auto;
+  padding-top: 50px;
+  min-width: 700px;
+}
+
+  .forecast-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }

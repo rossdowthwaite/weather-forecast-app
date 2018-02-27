@@ -1,0 +1,42 @@
+.input-container {
+  width: 100%;
+}
+
+.input-wrapper {
+  width:400px;
+  margin: 0 auto;
+  display: flex;
+  align-content: space-around;
+  margin-bottom: 50px;
+}
+
+  .input {
+    padding: 20px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 130px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #8B52CF;
+    cursor: pointer;
+    font-size: 14px;
+    color: #FFF;
+    margin-left: 20px;
+  }
+
+  button:disabled {
+    background-color: #C5B3DA;
+  }
+
+  button:hover {
+    background-color: #9665CF;
+  }

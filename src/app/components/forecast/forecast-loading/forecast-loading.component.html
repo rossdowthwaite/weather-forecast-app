@@ -1,0 +1,8 @@
+<div class="forecast-loading-wrapper">
+  <div class="forecast-loading-content" *ngIf="fetching | async">
+    <h2 class="loading-text">Loading</h2>
+  </div>
+  <div class="forecast-loading-content" *ngIf="(error | async) !== '' ">
+    <h2 class="error-text">{{ error | async }}</h2>
+  </div>
+</div>

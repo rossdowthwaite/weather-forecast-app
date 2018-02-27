@@ -1,0 +1,51 @@
+.forecast-item {
+  width: 100%;
+  display: flex;
+  position: relative;
+  padding-right: 20px;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 30px;
+  background-color: #347596;
+  margin-bottom: 20px;
+}
+
+.forecast-item-title {
+  padding: 20px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.forecast-periods {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.forecast-period {
+  padding: 6px;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.show-more {
+  cursor: pointer;
+  margin-bottom: 0px;
+}
+
+.remove-forecast {
+  position: absolute;
+  top: 3px;
+  right: 22px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #7CA6BC;
+  font-weight: bold
+}
+
+.remove-forecast:hover {
+  color: #FFF;
+}

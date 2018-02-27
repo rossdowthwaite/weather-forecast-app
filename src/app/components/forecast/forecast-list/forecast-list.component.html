@@ -1,0 +1,7 @@
+<div>
+  <ul class="forecast-list">
+    <li *ngFor="let forecast of (forecasts | async)">
+      <app-forecast-item [forecast]='forecast' (removeForecastData)="removeCityData($event)"></app-forecast-item>
+    </li>
+  </ul>
+</div>

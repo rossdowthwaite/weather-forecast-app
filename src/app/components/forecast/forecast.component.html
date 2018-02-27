@@ -1,0 +1,7 @@
+<div class="forecast-container">
+  <h1 class="forecast-title">{{ title }}</h1>
+  <app-forecast-input [forecasts]="forecasts$ | async" (getCityData)="getForecast($event)" ></app-forecast-input>
+  <app-forecast-time [times]="times$"  *ngIf='( count$ | async ) > 0' ></app-forecast-time>
+  <app-forecast-list [forecasts]="forecasts$" (removeForecast)="removeForecast($event)"></app-forecast-list>
+  <app-forecast-loading [fetching]="fetching$" [error]="error$"></app-forecast-loading>
+</div>

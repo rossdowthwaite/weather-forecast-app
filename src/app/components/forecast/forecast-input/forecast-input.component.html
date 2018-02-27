@@ -1,0 +1,14 @@
+<div class="input-container">
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-wrapper">
+        <input id="cityInput"
+          class="input"
+          placeholder="Choose a city"
+          type="text"
+          name="city"
+          [(ngModel)]="city"
+          required>
+        <button type="submit" class="button" [disabled]="invalidEntry()">Add</button>
+      </div>
+    </form>
+</div>
