@@ -3,18 +3,17 @@ import { ForecastService } from './forecast.service';
 
 import { MockApiData } from '../models/mock-api-data';
 import { ForecastModel } from '../interfaces/forecast';
+import { environment } from '../../environments/environment';
 
 import { HttpClientModule,  HttpClient, HttpRequest, HttpParams } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
-describe('ForecastService', () => {
-
-  const base = 'http://api.openweathermap.org/data/2.5/forecast?q=';
-  const key = '&APPID=435db885bb46d67890df2da3ac850083';
+fdescribe('ForecastService', () => {
   const city = 'Brighton';
   const paramOne = '&units=metric';
   const paramTwo = '&mode=json';
-  const url = `${base}${city}${paramOne}${paramTwo}${key}`;
+  const appid = `&APPID=${environment.apiKey}`;
+  const url = `${environment.apiUrl}${city}${paramOne}${paramTwo}${appid}`;
   const mockResponse = MockApiData.createMockData();
   const mockForecastData = ForecastModel.generateMockForecast();
 

@@ -8,12 +8,10 @@ import { catchError, retry, filter } from 'rxjs/operators';
 
 import { Forecast } from '../interfaces/forecast';
 import { ForecastData } from '../interfaces/forecast-data';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ForecastService {
-
-  private _key = '435db885bb46d67890df2da3ac850083';
-  private _base = 'http://api.openweathermap.org/data/2.5/forecast?q=';
 
   constructor(private http: HttpClient) {
     this.http = http;
@@ -21,12 +19,12 @@ export class ForecastService {
 
   // Get city forecast
   getForecast$( city: string ): Observable<any> {
-    const request = `${ this._base }${ city }`;
+    const request = `${ environment.apiUrl }${ city }`;
 
     const params = new HttpParams()
       .set('units', 'metric')
       .set('mode', 'json')
-      .set('APPID', this._key);
+      .set('APPID', environment.apiKey );
 
     return this.http.get(request, {params})
       .map(toForecast)
